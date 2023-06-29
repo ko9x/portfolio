@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Basics</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="headerContainer">
+        <button class="logoButton">Sean McGillis</button>
+        <button class="headerButton">Projects</button>
+        <button class="headerButton">Skills</button>
+        <button class="headerButton">About Me</button>
+      </div>
+    </header>
+    <section id="user-goal">
+      <h2>My Course Goal</h2>
+      <ul id="itemList">
+        <li>{{ listItemText }}</li>
+      </ul>
+      <p></p>
+    </section>
+  </body>
+</html>
