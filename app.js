@@ -4,7 +4,11 @@ const app1 = Vue.createApp({
       headerText: "This is the header section",
     };
   },
-  methods: {},
+  methods: {
+    clickedSean() {
+        alert('You clicked the Sean McGillis button!');
+    }
+  },
 });
 app1.mount("header");
 const app2 = Vue.createApp({
