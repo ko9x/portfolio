@@ -5,7 +5,7 @@ const app1 = Vue.createApp({
     };
   },
   methods: {
-    clickedSean() {
+    clickedLogo() {
         alert('You clicked the Sean McGillis button!');
     }
   },
@@ -14,7 +14,7 @@ app1.mount("header");
 const app2 = Vue.createApp({
   data() {
     return {
-      projectText: "Here is where the projects section will go",
+      projectText: "Latest Projects:",
     };
   },
   methods: {},

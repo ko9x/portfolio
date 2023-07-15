@@ -11,7 +11,7 @@
   <body>
     <header>
       <div class="headerContainer">
-        <button @click="clickedSean" class="logoButton">Sean McGillis</button>
+        <button @click="clickedLogo" class="logoButton">Sean McGillis</button>
         <button class="headerButton">Projects</button>
         <button class="headerButton">Skills</button>
         <button class="headerButton">About Me</button>
@@ -19,7 +19,47 @@
       </div>
     </header>
     <section id="projects">
-      <h2>{{projectText}}</h2>
+      <div style="margin: 20px">
+        <h2>{{projectText}}</h2>
+        <div style="display: flex">
+          <div
+            style="width: 58.536585%; /*960/1640 = .58536585*/ margin: 0 auto"
+          >
+            <img
+              contain
+              style="width: 100%; height: auto; background-color: aqua; padding: 2px;"
+              src="./assets/MyNotes800Cropped copy.png"
+            />
+          </div>
+          <div style="max-width: 450px; padding: 1px">
+            <div style=" padding: 0 10px 10px 30px">
+              <h3  class="descriptionHeader">MyNotes</h1>
+              <p class="descriptionText">
+                MyNotes is a project I created to make my life a little easier.
+                Add a little blurb here about how the notes are broken down into
+                sub-categories
+              </p>
+              <h4 class="descriptionTitle">Features</h3>
+              <p class="descriptionText">
+                Put a little blurb here about the demo mode, authentication,
+                search feature, copy and paste, light and dark mode, and how it
+                works on mobile as well
+              </p>
+              <h4 class="descriptionTitle">Skills Used (add logos)</h3>
+              <div>
+                <li>The front end is made with React.js</li>
+              </div>
+              <div>
+                <li>Firebase is used for authentication and data storage</li>
+              </div>
+              <h4 class="descriptionTitle">Links</h3>
+                <p class="descriptionText">
+                  Add links for a live preview and to the github repo
+                </p>
+            </div>
+          <!-- </div> -->
+        </div>
+      </div>
     </section>
     <section id="skills">
       <h2>{{skillsText}}</h2>
